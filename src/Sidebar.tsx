@@ -10,12 +10,12 @@ interface SidebarItemParam {
 
 const Sidebar = () => {
     const sidebarItems = [
-        {id: 'home', label: 'Home'},
         {id: 'about', label: 'About'},
         {id: 'experience', label: 'Experience'},
+        {id: 'education', label: 'Education'},
         {id: 'skills', label: 'Skills'},
-        {id: 'interest', label: 'Interest'},
-        {id: 'award', label: 'Award'},
+        {id: 'interests', label: 'Interests'},
+        {id: 'awards', label: 'Awards'},
     ]
 
     const [watchLink, setWatchLink] = useState('home')
@@ -36,10 +36,10 @@ const Sidebar = () => {
                     activeClass='active'
                     spy
                     smooth
-                    offset={0}
+                    offset={-50}
                     duration={500}
                 >
-                    <Text as='h1' fontSize='xl' _hover={{ fontWeight: 'bold' }}>
+                    <Text as='h1' fontSize='2xl' _hover={{ fontWeight: 'bold' }}>
                         {param.label}
                     </Text>
                 </Link>

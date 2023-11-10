@@ -4,9 +4,9 @@ import {Element} from 'react-scroll';
 
 const PageWrapper = ({id, label, children} : any) => {
     return (
-        <Box minHeight='100vh'>
+        <Box minWidth='800px' minHeight='100vh' padding='20px'>
             <Element name={id}>
-                <Text as='h1' fontSize='2xl'>{label}</Text>
+                <Text as='h1' fontSize='4xl'>{label}</Text>
             </Element>
             {children}
         </Box>
